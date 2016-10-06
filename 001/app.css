@@ -9,7 +9,7 @@
 }
 
 .jumbotron {
-    background-image: url("images/angela01.jpg");
+    background-image: url("../images/angela01.jpg");
     /*background-size: cover;*/
     height: 100vh;
     margin-bottom: 0;
