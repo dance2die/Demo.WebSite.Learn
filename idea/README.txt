@@ -1,0 +1,1 @@
+Add flashing text (using animate css) and place many texts using GridFolio
