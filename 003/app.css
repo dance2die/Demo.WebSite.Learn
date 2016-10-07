@@ -1,0 +1,112 @@
+/*
+	Get rid of Navbar rounded corners
+	http://stackoverflow.com/a/15275488/4035
+*/
+* {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.jumbotron {
+    background-image: url("../images/floor-wall.jpg");
+    /*background-size: cover;*/
+    height: 100vh;
+    margin-bottom: 0;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.jumbotron img {
+}
+
+.title {
+    color: #FFFFFF;
+}
+
+.center {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.productInfo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+}
+
+.productDetail {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.layout-light {
+    background: #9b9b9b;
+}
+
+.layout-dark {
+    background: #1b1b1b;
+}
+
+/*header {
+	background-color: black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}*/
+
+.navbar {
+    margin-bottom: 0;
+    padding: 30px 120px 15px 10px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #bbb;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+header, footer {
+    background-color: #333;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#productImageCarousel {
+    margin: 40px 0;
+}
+
+#productImageCarousel img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
