@@ -14,6 +14,11 @@
     offset-after: 30px;
 }
 
+ul li img {
+    width: 200px;
+    height: auto;
+}
+
 .jumbotron {
     background-image: url("../images/floor-wall.jpg");
     /*background-size: cover;*/
