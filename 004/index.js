@@ -1,4 +1,38 @@
 $(function () {
+    var themes = [
+        'classic',
+        'warhol',
+    ];
+
+    var textures = {
+        'classic': [
+            'dark-bg black-texture-1',
+            'dark-bg black-texture-2',
+            'dark-bg black-texture-3',
+            'light-bg white-texture-1',
+            'light-bg white-texture-2',
+            'light-bg white-texture-3'
+        ],
+        'warhol': [
+            'dark-bg solid-blue',
+            'dark-bg solid-red',
+            'dark-bg solid-yellow',
+            'dark-bg solid-pink',
+            'dark-bg solid-green'
+        ]
+    };
+
+    var blocks = [];
+    for (var i = 0; i < 12; i++) {
+        blocks.push({
+            title: 'Project Title',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            url: 'http://christinecha.github.io/gridfolio/',
+            tags: ['html', 'css', 'javascript']
+            // classname: textures[theme] ? textures[theme][i % textures[theme].length] : ''
+        });
+    }
+
     var gridfolio = new Gridfolio({
 
         // This is the selector string of the DOM element you want to dump
@@ -36,20 +70,6 @@ $(function () {
         },
 
         // Okay, this is where your actual data lives. All fields are optional.
-        blocks: [
-            {
-                title: 'Project Title',
-                description: 'My project is awesome.',
-                url: 'http://christinecha.github.io/gridfolio/',
-                tags: ['html', 'css', 'javascript'],
-
-                // Whatever you enter here gets tacked on to the 'gridfolio--block' classname.
-                classname: 'any-additional-classes-this-block-should-have'
-            },
-            {
-                title: 'Second Project'
-                // etc., etc.
-            }
-        ]
+        blocks: blocks
     });
 });
